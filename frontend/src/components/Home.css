@@ -1,0 +1,46 @@
+/* Home.css */
+
+/* Set the background image */
+body {
+    background-image: url('../images/4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This ensures the background doesn't scroll with the content */
+  }
+  
+  /* Optional: You can style the hero unit text for better visibility on the background */
+  .hero-text {
+    color: white; /* Set text color to white or a suitable color for better visibility */
+  }
+  .highlight-text {
+    color: black; /* Set the color for "my" */
+    /* You can apply other styles like font-size, font-weight, etc. as needed */
+  }
+  
+  /* Optional: You can style the hero unit text for better visibility on the background */
+  .hero-text {
+    color: white; /* Set text color to white or a suitable color for better visibility */
+  }
+ /* Keyframes for the initial animation */
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply the initial animation class to the text */
+.animate-text {
+  animation: bounce 2s;
+}
+
+/* Add a class to apply the repeated animation on hover */
+.animate-text:hover {
+  animation: bounce 2s infinite; /* Repeats the bounce animation on hover */
+}
